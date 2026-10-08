@@ -1,0 +1,18 @@
+# Settings for Firebase App Hosting
+# https://firebase.google.com/docs/app-hosting/configure
+
+kind: "AppHostingYaml"
+version: "v1alpha"
+
+runConfig:
+  # Minimizes cost by scaling down to zero when idle
+  minInstances: 0
+  maxInstances: 2
+  concurrency: 80
+  cpu: 1
+  memoryMiB: 512
+
+# Environment variables can be added here if needed
+# env:
+#   - variable: STORAGE_BUCKET
+#     value: my-bucket
